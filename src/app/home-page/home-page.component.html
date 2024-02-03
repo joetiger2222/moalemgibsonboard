@@ -1,0 +1,141 @@
+<nav class="navbar d-flex align-items-center justify-content-between w-100">
+    <div class="social-icons">
+        <a class="social-link" href="#">
+            <i class="fa-brands fa-facebook fa-2x"></i>
+        </a>
+        <a class="social-link" href="#">
+            <i class="fa-brands fa-instagram fa-2x"></i>
+        </a>
+        <a class="social-link" href="#">
+            <i class="fa-brands fa-twitter fa-2x"></i>
+        </a>
+    </div>
+    <div class="logo-container">
+        <h1>المعلم</h1>
+    </div>
+</nav>
+
+<div class="triangle-container w-100 d-flex align-items-center justify-content-center">
+    <h3 class="first-word">اصباغ و جبس بورد</h3>
+    <h5 class="second-word">جميع انواع الديكورات و الصبغ</h5>
+    <p class="third-word">01156345656</p>
+    <div class="triangle"></div>
+</div>
+
+<div class="w-100 d-flex justify-content-center">
+    <div class="d-flex flex-wrap align-items-center justify-content-center mt-5" style="width: 90%; gap: 10px;">
+        <div *ngFor="let s of service let e = even; let o = odd;" class="service"[ngClass]="e?'even':'odd'">
+            <h4>{{s.name}}</h4>
+            <h6>{{s.description}}</h6>
+        </div>
+        </div>
+</div>
+
+<div class="w-100 d-flex justify-content-center mt-5">
+    <div class="d-flex flex-column align-items-end section justify-content-center">
+        <h1 class="mb-5">بارتشن</h1>
+        <div class="d-flex align-items-center w-100 flex-wrap justify-content-center mb-5" style="gap: 10px;">
+        <img class="section-image" src="../../assets/1.jpeg" />
+        <img class="section-image" src="../../assets/1.jpeg" />
+        <img class="section-image" src="../../assets/1.jpeg" />
+        <img class="section-image" src="../../assets/1.jpeg" />
+        </div>
+    </div>
+</div>
+
+
+<div class="w-100 d-flex justify-content-center mt-5">
+    <div class="d-flex flex-column align-items-end section justify-content-center">
+        <h1 class="mb-5">بارتشن</h1>
+        <div class="d-flex align-items-center w-100 flex-wrap justify-content-center mb-5" style="gap: 10px;">
+        <img class="section-image" src="../../assets/1.jpeg" />
+        <img class="section-image" src="../../assets/1.jpeg" />
+        <img class="section-image" src="../../assets/1.jpeg" />
+        <img class="section-image" src="../../assets/1.jpeg" />
+        </div>
+    </div>
+</div>
+
+
+<div class="w-100 d-flex justify-content-center mt-5">
+    <div class="d-flex flex-column align-items-end section justify-content-center">
+        <h1 class="mb-5">بارتشن</h1>
+        <div class="d-flex align-items-center w-100 flex-wrap justify-content-center mb-5" style="gap: 10px;">
+        <img class="section-image" src="../../assets/1.jpeg" />
+        <img class="section-image" src="../../assets/1.jpeg" />
+        <img class="section-image" src="../../assets/1.jpeg" />
+        <img class="section-image" src="../../assets/1.jpeg" />
+        </div>
+    </div>
+</div>
+
+
+<div class="w-100 d-flex justify-content-center mt-5">
+    <div class="d-flex flex-column align-items-end section justify-content-center">
+        <h1 class="mb-5">بارتشن</h1>
+        <div class="d-flex align-items-center w-100 flex-wrap justify-content-center mb-5" style="gap: 10px;">
+        <img class="section-image" src="../../assets/1.jpeg" />
+        <img class="section-image" src="../../assets/1.jpeg" />
+        <img class="section-image" src="../../assets/1.jpeg" />
+        <img class="section-image" src="../../assets/1.jpeg" />
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+<div class="w-100 justify-content-center align-items-center d-flex contact-us flex-column mb-5">
+    <h1>تواصل معنا</h1>
+    <h6>تواصل معنا من خلال ايا من هذه الطرق فنحن نعدك بسرعة الرد</h6>
+   
+    <div class="row w-100 gap-3 justify-content-center p-3">
+        
+            <div class="contact-us-card card col-md-3" style="max-width: 400px;">
+                <h6> <i class="fa-solid fa-location-dot"></i> المكتب </h6>
+                <p>سيتم الترحيب بك وتعريفك بكامل التفاصيل ان اتيت الى المكتب</p>
+                <p style="align-self:end;color: black;">العنوان</p>
+            </div>
+
+            <div class="contact-us-card card col-md-3" style="max-width: 400px;">
+                <h6> <i class="fa-solid fa-envelope"></i> البريد الالكتروني </h6>
+                <p>لدينا عضو من فريقنا للرد عليك من خلال البريد الالكتروني</p>
+                <p style="align-self:end;color: black;">joetiger22@gmail.com</p>
+            </div>
+
+            <div class="contact-us-card card col-md-3" style="max-width: 400px;">
+                <h6> <i class="fa-solid fa-phone"></i> التليفون </h6>
+                <p>متاح من الساعه 8:00 ص الى 6:00 م</p>
+                <p style="align-self:end;color: black;">0123123235656</p>
+            </div>
+        
+    </div>
+</div>
+
+
+<footer class="footer">
+    <h5> جميع الحقوق محفوظه لفريق عمل <span>المعلم</span></h5>
+    <div class="footer-social-media">
+        <h5 class="mb-3">سوشيال ميديا</h5>
+        <div class="d-flex align-items-center justify-content-center gap-3">
+            <a class="social-link" href="#">
+                <i class="fa-brands fa-facebook fa-2x"></i>
+            </a>
+            <a class="social-link" href="#">
+                <i class="fa-brands fa-instagram fa-2x"></i>
+            </a>
+            <a class="social-link" href="#">
+                <i class="fa-brands fa-twitter fa-2x"></i>
+            </a>
+        </div>
+    </div>
+    <div class="footer-contact-us">
+        <h5>ارقامنا للتواصل</h5>
+        <h5>0156456565632</h5>
+        <h5>0156456565632</h5>
+    </div>
+</footer>
+
