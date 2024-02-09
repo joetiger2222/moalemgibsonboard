@@ -1,5 +1,5 @@
-<nav class="navbar  w-100">
-    <!-- <div class="social-icons">
+<nav class="navbar w-100">
+  <!-- <div class="social-icons">
         <a class="social-link" href="#">
             <i class="fa-brands fa-facebook fa-2x"></i>
         </a>
@@ -10,175 +10,368 @@
             <i class="fa-brands fa-twitter fa-2x"></i>
         </a>
     </div> -->
-    <div class="logo-container w-100 text-center ">
-        <h1>معلم جبسن بورد</h1>
-    </div>
+  <div class="logo-container w-100 text-center">
+    <h1>معلم جبسن بورد</h1>
+  </div>
 </nav>
 
-<div class="triangle-container w-100 d-flex align-items-center justify-content-center">
-    <h3 class="first-word">اصباغ و جبس بورد</h3>
-    <h5 class="second-word">جميع انواع الديكورات و الصبغ</h5>
-    <!-- <p class="third-word fw-bold fs-4 ">50313616</p> -->
-    <a class="third-word  fs-4 " style="color: #FFFF00;" href="tel:50313616" (click)="handlePhoneNumberClick">
-        50313616
-      </a>
-    <div class="triangle"></div>
+<div
+  class="triangle-container w-100 d-flex align-items-center justify-content-center"
+>
+  <h3 class="first-word">اصباغ و جبس بورد</h3>
+  <h5 class="second-word">جميع انواع الديكورات و الصبغ</h5>
+  <!-- <p class="third-word fw-bold fs-4 ">50313616</p> -->
+  <a
+    class="third-word fs-4"
+    style="color: #ffff00"
+    href="tel:50313616"
+    (click)="(handlePhoneNumberClick)"
+  >
+    50313616
+  </a>
+  <div class="triangle"></div>
 </div>
 
 <div class="w-100 d-flex justify-content-center">
-    <div class="d-flex flex-wrap align-items-center justify-content-center mt-5" style="width: 90%; gap: 10px;">
-        <div *ngFor="let s of service let e = even; let o = odd;" class="service"[ngClass]="e?'even':'odd'">
-            <h4>{{s.name}}</h4>
-            <h6>{{s.description}}</h6>
-        </div>
-        </div>
+  <div
+    class="d-flex flex-wrap align-items-center justify-content-center mt-5"
+    style="width: 90%; gap: 10px"
+  >
+    <div
+      *ngFor="let s of service; let e = even; let o = odd"
+      class="service"
+      [ngClass]="e ? 'even' : 'odd'"
+    >
+      <h4>{{ s.name }}</h4>
+      <h6>{{ s.description }}</h6>
+    </div>
+  </div>
 </div>
 
 <div class="w-100 d-flex justify-content-center mt-5">
-    <div class="d-flex flex-column align-items-end section justify-content-center">
-        <h1 class="mb-5">بارتشن</h1>
-        <div class="d-flex align-items-center w-100 flex-wrap justify-content-center mb-5" style="gap: 10px;">
-        <img class="section-image" alt="بارتشن" src="../../assets/بارتشن/Partition_home_decoration (1).jpg" />
-        <img class="section-image" alt="بارتشن" src="../../assets/بارتشن/Partition_home_decoration (2).jpg" />
-        <img class="section-image" alt="بارتشن" src="../../assets/بارتشن/Partition_home_decoration (3).jpg" />
-        <img class="section-image" alt="بارتشن" src="../../assets/بارتشن/Partition_home_decoration (4).jpg" />
-        </div>
+  <div
+    class="d-flex flex-column align-items-end section justify-content-center"
+  >
+    <h1 class="mb-5">بارتشن</h1>
+    <div
+      class="d-flex align-items-center w-100 flex-wrap justify-content-center mb-5"
+      style="gap: 10px"
+    >
+      <img
+        class="section-image"
+        alt="بارتشن"
+        src="../../assets/بارتشن/Partition_home_decoration (1).jpg"
+      />
+      <img
+        class="section-image"
+        alt="بارتشن"
+        src="../../assets/بارتشن/Partition_home_decoration (2).jpg"
+      />
+      <img
+        class="section-image"
+        alt="بارتشن"
+        src="../../assets/بارتشن/Partition_home_decoration (3).jpg"
+      />
+      <img
+        class="section-image"
+        alt="بارتشن"
+        src="../../assets/بارتشن/Partition_home_decoration (4).jpg"
+      />
     </div>
-</div>
-
-
-<div class="w-100 d-flex justify-content-center mt-5">
-    <div class="d-flex flex-column align-items-end section justify-content-center">
-        <h1 class="mb-5">جبسن بورد</h1>
-        <div class="d-flex align-items-center w-100 flex-wrap justify-content-center mb-5" style="gap: 10px;">
-            <img class="section-image" alt="جبس بورد" src="../../assets/جبس بورد/gypsum_board_home_decoration (1).jpg" />
-            <img class="section-image" alt="جبس بورد" src="../../assets/جبس بورد/gypsum_board_home_decoration (6).jpg" />
-            <img class="section-image" alt="جبس بورد" src="../../assets/جبس بورد/gypsum_board_home_decoration (3).jpg" />
-            <img class="section-image" alt="جبس بورد" src="../../assets/جبس بورد/gypsum_board_home_decoration (4).jpg" />
-        </div>
-    </div>
-</div>
-
-
-<div class="w-100 d-flex justify-content-center mt-5">
-    <div class="d-flex flex-column align-items-end section justify-content-center">
-        <h1 class="mb-5">اسمنت بورد</h1>
-        <div class="d-flex align-items-center w-100 flex-wrap justify-content-center mb-5" style="gap: 10px;">
-        <img class="section-image" alt="اسمنت بورد" src="../../assets/اسمنت بورد/Cement_board_home_decoration (1).jpg" />
-        <img class="section-image" alt="اسمنت بورد" src="../../assets/اسمنت بورد/Cement_board_home_decoration (2).jpg" />
-        <img class="section-image" alt="اسمنت بورد" src="../../assets/اسمنت بورد/Cement_board_home_decoration (3).jpg" />
-        <img class="section-image" alt="اسمنت بورد" src="../../assets/اسمنت بورد/Cement_board_home_decoration (4).jpg" />
-        </div>
-    </div>
-</div>
-
-
-<div class="w-100 d-flex justify-content-center mt-5">
-    <div class="d-flex flex-column align-items-end section justify-content-center">
-        <h1 class="mb-5">بديل خشب</h1>
-        <div class="d-flex align-items-center w-100 flex-wrap justify-content-center mb-5" style="gap: 10px;">
-        <img class="section-image" alt="بديل خشب" src="../../assets/بديل خشب/wood_alternative_home_decoration.jpg" />
-        <img class="section-image" alt="بديل خشب" src="../../assets/بديل خشب/wood_alternative_home_decoration (1).jpg" />
-        <img class="section-image" alt="بديل خشب" src="../../assets/بديل خشب/wood_alternative_home_wall_decoration (1).jpg" />
-        <img class="section-image" alt="بديل خشب" src="../../assets/بديل خشب/wood_alternative_home_wall_decoration (2).jpg" />
-        </div>
-    </div>
+  </div>
 </div>
 
 <div class="w-100 d-flex justify-content-center mt-5">
-    <div class="d-flex flex-column align-items-end section justify-content-center">
-        <h1 class="mb-5">بديل رخام </h1>
-        <div class="d-flex align-items-center w-100 flex-wrap justify-content-center mb-5" style="gap: 10px;">
-        <img class="section-image" alt="بديل رخام" src="../../assets/بديل رخام/Marble_alternative_home_decoration (1).jpg" />
-        <img class="section-image" alt="بديل رخام" src="../../assets/بديل رخام/Marble_alternative_home_decoration (2).jpg" />
-        <img class="section-image" alt="بديل رخام" src="../../assets/بديل رخام/Marble_alternative_home_decoration (3).jpg" />
-        <img class="section-image" alt="بديل رخام" src="../../assets/بديل رخام/Marble_alternative_home_decoration (4).jpg" />
-        </div>
+  <div
+    class="d-flex flex-column align-items-end section justify-content-center"
+  >
+    <h1 class="mb-5">جبسن بورد</h1>
+    <div
+      class="d-flex align-items-center w-100 flex-wrap justify-content-center mb-5"
+      style="gap: 10px"
+    >
+      <img
+        class="section-image"
+        alt="جبس بورد"
+        src="../../assets/جبس بورد/gypsum_board_home_decoration (1).jpg"
+      />
+      <img
+        class="section-image"
+        alt="جبس بورد"
+        src="../../assets/جبس بورد/gypsum_board_home_decoration (6).jpg"
+      />
+      <img
+        class="section-image"
+        alt="جبس بورد"
+        src="../../assets/جبس بورد/gypsum_board_home_decoration (3).jpg"
+      />
+      <img
+        class="section-image"
+        alt="جبس بورد"
+        src="../../assets/جبس بورد/gypsum_board_home_decoration (4).jpg"
+      />
     </div>
+  </div>
 </div>
 
 <div class="w-100 d-flex justify-content-center mt-5">
-    <div class="d-flex flex-column align-items-end section justify-content-center">
-        <h1 class="mb-5">سقف امريكي</h1>
-        <div class="d-flex align-items-center w-100 flex-wrap justify-content-center mb-5" style="gap: 10px;">
-        <img class="section-image" alt="سقف امريكي" src="../../assets/سقف امريكي/inside_American_roof_gypsum_home_decoration (1).jpg" />
-        <img class="section-image" alt="سقف امريكي" src="../../assets/سقف امريكي/inside_American_roof_gypsum_home_decoration (2).jpg" />
-        <img class="section-image" alt="سقف امريكي" src="../../assets/سقف امريكي/inside_American_roof_gypsum_home_decoration (3).jpg" />
-        <img class="section-image" alt="سقف امريكي" src="../../assets/سقف امريكي/inside_American_roof_gypsum_home_decoration (4).jpg" />
-        </div>
+  <div
+    class="d-flex flex-column align-items-end section justify-content-center"
+  >
+    <h1 class="mb-5">اسمنت بورد</h1>
+    <div
+      class="d-flex align-items-center w-100 flex-wrap justify-content-center mb-5"
+      style="gap: 10px"
+    >
+      <img
+        class="section-image"
+        alt="اسمنت بورد"
+        src="../../assets/اسمنت بورد/Cement_board_home_decoration (1).jpg"
+      />
+      <img
+        class="section-image"
+        alt="اسمنت بورد"
+        src="../../assets/اسمنت بورد/Cement_board_home_decoration (2).jpg"
+      />
+      <img
+        class="section-image"
+        alt="اسمنت بورد"
+        src="../../assets/اسمنت بورد/Cement_board_home_decoration (3).jpg"
+      />
+      <img
+        class="section-image"
+        alt="اسمنت بورد"
+        src="../../assets/اسمنت بورد/Cement_board_home_decoration (4).jpg"
+      />
     </div>
+  </div>
 </div>
 
 <div class="w-100 d-flex justify-content-center mt-5">
-    <div class="d-flex flex-column align-items-end section justify-content-center">
-        <h1 class="mb-5"> بلاطات 60*60</h1>
-        <div class="d-flex align-items-center w-100 flex-wrap justify-content-center mb-5" style="gap: 10px;">
-        <img class="section-image" alt="بلاطات 60*60" src="../../assets/بلاطات 6060/6060_tiles_home_decoration (1).jpg" />
-        <img class="section-image" alt="بلاطات 60*60" src="../../assets/بلاطات 6060/6060_tiles_home_decoration (2).jpg" />
-        <img class="section-image" alt="بلاطات 60*60" src="../../assets/بلاطات 6060/6060_tiles_home_decoration (3).jpg" />
-        <img class="section-image" alt="بلاطات 60*60" src="../../assets/بلاطات 6060/6060_tiles_home_decoration.jpg" />
-        </div>
+  <div
+    class="d-flex flex-column align-items-end section justify-content-center"
+  >
+    <h1 class="mb-5">بديل خشب</h1>
+    <div
+      class="d-flex align-items-center w-100 flex-wrap justify-content-center mb-5"
+      style="gap: 10px"
+    >
+      <img
+        class="section-image"
+        alt="بديل خشب"
+        src="../../assets/بديل خشب/wood_alternative_home_decoration.jpg"
+      />
+      <img
+        class="section-image"
+        alt="بديل خشب"
+        src="../../assets/بديل خشب/wood_alternative_home_decoration (1).jpg"
+      />
+      <img
+        class="section-image"
+        alt="بديل خشب"
+        src="../../assets/بديل خشب/wood_alternative_home_wall_decoration (1).jpg"
+      />
+      <img
+        class="section-image"
+        alt="بديل خشب"
+        src="../../assets/بديل خشب/wood_alternative_home_wall_decoration (2).jpg"
+      />
     </div>
+  </div>
 </div>
 
 <div class="w-100 d-flex justify-content-center mt-5">
-    <div class="d-flex flex-column align-items-end section justify-content-center">
-        <h1 class="mb-5">صبغ ايطالي </h1>
-        <div class="d-flex align-items-center w-100 flex-wrap justify-content-center mb-5" style="gap: 10px;">
-            <img class="section-image" alt="صبغ ايطالي" src="../../assets/صبغ ايطالي/Italian_dye_home_wall_decoration (1).jpg" />
-            <img class="section-image" alt="صبغ ايطالي" src="../../assets/صبغ ايطالي/Italian_dye_home_wall_decoration (2).jpg" />
-            <img class="section-image" alt="صبغ ايطالي" src="../../assets/صبغ ايطالي/Italian_dye_home_wall_decoration (3).jpg" />
-            <img class="section-image" alt="صبغ ايطالي" src="../../assets/صبغ ايطالي/Italian_dye_home_wall_decoration (4).jpg" />
-        </div>
+  <div
+    class="d-flex flex-column align-items-end section justify-content-center"
+  >
+    <h1 class="mb-5">بديل رخام</h1>
+    <div
+      class="d-flex align-items-center w-100 flex-wrap justify-content-center mb-5"
+      style="gap: 10px"
+    >
+      <img
+        class="section-image"
+        alt="بديل رخام"
+        src="../../assets/بديل رخام/Marble_alternative_home_decoration (1).jpg"
+      />
+      <img
+        class="section-image"
+        alt="بديل رخام"
+        src="../../assets/بديل رخام/Marble_alternative_home_decoration (2).jpg"
+      />
+      <img
+        class="section-image"
+        alt="بديل رخام"
+        src="../../assets/بديل رخام/Marble_alternative_home_decoration (3).jpg"
+      />
+      <img
+        class="section-image"
+        alt="بديل رخام"
+        src="../../assets/بديل رخام/Marble_alternative_home_decoration (4).jpg"
+      />
     </div>
+  </div>
 </div>
 
 <div class="w-100 d-flex justify-content-center mt-5">
-    <div class="d-flex flex-column align-items-end section justify-content-center">
-        <h1 class="mb-5"> مساح </h1>
-        <div class="d-flex align-items-center w-100 flex-wrap justify-content-center mb-5" style="gap: 10px;">
-            <img class="section-image" alt="مساح" src="../../assets/مساح/Surveyor_person_home_decoration (1).jpg" />
-            <img class="section-image" alt="مساح" src="../../assets/مساح/Surveyor_person_home_decoration (6).jpg" />
-            <img class="section-image" alt="مساح" src="../../assets/مساح/Surveyor_person_home_decoration (3).jpg" />
-            <img class="section-image" alt="مساح" src="../../assets/مساح/Surveyor_person_home_decoration (4).jpg" />
-        </div>
+  <div
+    class="d-flex flex-column align-items-end section justify-content-center"
+  >
+    <h1 class="mb-5">سقف امريكي</h1>
+    <div
+      class="d-flex align-items-center w-100 flex-wrap justify-content-center mb-5"
+      style="gap: 10px"
+    >
+      <img
+        class="section-image"
+        alt="سقف امريكي"
+        src="../../assets/سقف امريكي/inside_American_roof_gypsum_home_decoration (1).jpg"
+      />
+      <img
+        class="section-image"
+        alt="سقف امريكي"
+        src="../../assets/سقف امريكي/inside_American_roof_gypsum_home_decoration (2).jpg"
+      />
+      <img
+        class="section-image"
+        alt="سقف امريكي"
+        src="../../assets/سقف امريكي/inside_American_roof_gypsum_home_decoration (3).jpg"
+      />
+      <img
+        class="section-image"
+        alt="سقف امريكي"
+        src="../../assets/سقف امريكي/inside_American_roof_gypsum_home_decoration (4).jpg"
+      />
     </div>
+  </div>
 </div>
 
-<div class="w-100 justify-content-center align-items-center d-flex contact-us flex-column mb-5">
-    <h1>تواصل معنا</h1>
-    <h6 style="text-align: center;padding: 10px;line-height: 30px;">تواصل معنا من خلال ايا من هذه الطرق فنحن نعدك بسرعة الرد</h6>
-   
-    <div class="row w-100 gap-3 justify-content-center p-3">
-        
-            <!-- <div class="contact-us-card card col-md-3" style="max-width: 400px;">
-                <h6> <i class="fa-solid fa-location-dot"></i> المكتب </h6>
-                <p>سيتم الترحيب بك وتعريفك بكامل التفاصيل ان اتيت الى المكتب</p>
-                <p style="align-self:center;color: black;">العنوان</p>
-            </div>
-
-            <div class="contact-us-card card col-md-3" style="max-width: 400px;">
-                <h6> <i class="fa-solid fa-envelope"></i> البريد الالكتروني </h6>
-                <p>لدينا عضو من فريقنا للرد عليك من خلال البريد الالكتروني</p>
-                <p style="align-self:center;color: black;">البريد الالكتروني</p>
-            </div> -->
-
-            <div class="contact-us-card card col-md-3" style="max-width: 400px;">
-                <h6> <i class="fa-solid fa-phone"></i> التليفون </h6>
-                <p>متاح على مدار اليوم</p>
-                <!-- <p style="align-self:center;color: black;">50313616</p> -->
-                <a style="color: #9C2C34;" href="tel:50313616" (click)="handlePhoneNumberClick">
-                    50313616
-                  </a>
-            </div>
-        
+<div class="w-100 d-flex justify-content-center mt-5">
+  <div
+    class="d-flex flex-column align-items-end section justify-content-center"
+  >
+    <h1 class="mb-5">بلاطات 60*60</h1>
+    <div
+      class="d-flex align-items-center w-100 flex-wrap justify-content-center mb-5"
+      style="gap: 10px"
+    >
+      <img
+        class="section-image"
+        alt="بلاطات 60*60"
+        src="../../assets/بلاطات 6060/6060_tiles_home_decoration (1).jpg"
+      />
+      <img
+        class="section-image"
+        alt="بلاطات 60*60"
+        src="../../assets/بلاطات 6060/6060_tiles_home_decoration (2).jpg"
+      />
+      <img
+        class="section-image"
+        alt="بلاطات 60*60"
+        src="../../assets/بلاطات 6060/6060_tiles_home_decoration (3).jpg"
+      />
+      <img
+        class="section-image"
+        alt="بلاطات 60*60"
+        src="../../assets/بلاطات 6060/6060_tiles_home_decoration.jpg"
+      />
     </div>
+  </div>
 </div>
 
+<div class="w-100 d-flex justify-content-center mt-5">
+  <div
+    class="d-flex flex-column align-items-end section justify-content-center"
+  >
+    <h1 class="mb-5">صبغ ايطالي</h1>
+    <div
+      class="d-flex align-items-center w-100 flex-wrap justify-content-center mb-5"
+      style="gap: 10px"
+    >
+      <img
+        class="section-image"
+        alt="صبغ ايطالي"
+        src="../../assets/صبغ ايطالي/Italian_dye_home_wall_decoration (1).jpg"
+      />
+      <img
+        class="section-image"
+        alt="صبغ ايطالي"
+        src="../../assets/صبغ ايطالي/Italian_dye_home_wall_decoration (2).jpg"
+      />
+      <img
+        class="section-image"
+        alt="صبغ ايطالي"
+        src="../../assets/صبغ ايطالي/Italian_dye_home_wall_decoration (3).jpg"
+      />
+      <img
+        class="section-image"
+        alt="صبغ ايطالي"
+        src="../../assets/صبغ ايطالي/Italian_dye_home_wall_decoration (4).jpg"
+      />
+    </div>
+  </div>
+</div>
 
-<footer class="footer flex justify-content-evenly  ">
-    <h5 style="width: 40%;color: #FFFF00;"> معلم جبسن بورد</h5>
-    <!-- <div class="footer-social-media">
+<div class="w-100 d-flex justify-content-center mt-5">
+  <div
+    class="d-flex flex-column align-items-end section justify-content-center"
+  >
+    <h1 class="mb-5">مساح</h1>
+    <div
+      class="d-flex align-items-center w-100 flex-wrap justify-content-center mb-5"
+      style="gap: 10px"
+    >
+      <img
+        class="section-image"
+        alt="مساح"
+        src="../../assets/مساح/Surveyor_person_home_decoration (1).jpg"
+      />
+      <img
+        class="section-image"
+        alt="مساح"
+        src="../../assets/مساح/Surveyor_person_home_decoration (6).jpg"
+      />
+      <img
+        class="section-image"
+        alt="مساح"
+        src="../../assets/مساح/Surveyor_person_home_decoration (3).jpg"
+      />
+      <img
+        class="section-image"
+        alt="مساح"
+        src="../../assets/مساح/Surveyor_person_home_decoration (4).jpg"
+      />
+    </div>
+  </div>
+</div>
+
+<div
+  class="w-100 justify-content-center align-items-center d-flex contact-us flex-column mb-5"
+>
+  <h1>تواصل معنا</h1>
+  <h6 style="text-align: center; padding: 10px; line-height: 30px">
+    تواصل معنا من خلال ايا من هذه الطرق فنحن نعدك بسرعة الرد
+  </h6>
+
+  <div class="row w-100 gap-3 justify-content-center p-3">
+    <div class="contact-us-card card col-md-3" style="max-width: 400px">
+      <h6><i class="fa-solid fa-phone"></i> التليفون</h6>
+      <p>متاح على مدار اليوم</p>
+      <!-- <p style="align-self:center;color: black;">50313616</p> -->
+      <a
+        style="color: #9c2c34"
+        href="tel:50313616"
+        (click)="(handlePhoneNumberClick)"
+      >
+        50313616
+      </a>
+    </div>
+  </div>
+</div>
+
+<footer class="footer flex justify-content-evenly">
+  <h5 style="width: 40%; color: #ffff00">معلم جبسن بورد</h5>
+  <!-- <div class="footer-social-media">
         <h5 class="mb-3">سوشيال ميديا</h5>
         <div class="d-flex align-items-center justify-content-center gap-3">
             <a class="social-link" href="#">
@@ -192,12 +385,16 @@
             </a>
         </div>
     </div> -->
-    <div class="footer-contact-us">
-        <h5>ارقامنا للتواصل</h5>
-        <!-- <h5>50313616</h5> -->
-        <a class=" fs-5 " style="color: #FFFF00;" href="tel:50313616" (click)="handlePhoneNumberClick">
-            50313616
-          </a>
-    </div>
+  <div class="footer-contact-us">
+    <h5>ارقامنا للتواصل</h5>
+    <!-- <h5>50313616</h5> -->
+    <a
+      class="fs-5"
+      style="color: #ffff00"
+      href="tel:50313616"
+      (click)="(handlePhoneNumberClick)"
+    >
+      50313616
+    </a>
+  </div>
 </footer>
-

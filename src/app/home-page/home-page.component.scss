@@ -35,19 +35,11 @@
     top: 150px;
 }
 .triangle{
-    // width: 0;
-    // height: 0;
-    // border-left: 400px solid transparent;
-    // border-right: 400px solid transparent;
-    // border-top: 300px solid var(--dark-color);
-    width: 800px;
-    height: 300px;
-    /* border-left: 400px solid transparent; */
-    /* border-right: 400px solid transparent; */
-    /* border-top: 300px solid var(--dark-color); */
-    clip-path: polygon(0 0, 50% 100%, 100% 0);
-    background-color: var(--dark-color);
-    z-index: -1;
+    width: 0;
+    height: 0;
+    border-left: 400px solid transparent;
+    border-right: 400px solid transparent;
+    border-top: 300px solid var(--dark-color);
 }
 .service{
     background-color: var(--yellow-color);
