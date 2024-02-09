@@ -9,4 +9,8 @@ import { OurServicesService } from '../Services/our-services.service';
 export class HomePageComponent {
 constructor(private ourServices:OurServicesService){}
 service=this.ourServices.services
+
+handlePhoneNumberClick (){
+  window.location.href = 'tel:50313616';
+}
 }
